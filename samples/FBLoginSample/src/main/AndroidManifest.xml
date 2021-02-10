@@ -1,11 +1,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 
-    package="com.facebook.fbloginsample">
+    package="com.hs.instagram.bl">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
-        android:name=".FBLoginSampleApp"
+        android:name="com.hs.instagram.bl.FBLoginSampleApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -13,19 +13,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="com.hs.instagram.bl.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
-            android:name=".FacebookLoginActivity"
+            android:name="com.hs.instagram.bl.FacebookLoginActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation">
         </activity>
-        <activity android:name=".PostFeedActivity"/>
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".PermissionsActivity"/>
+        <activity android:name="com.hs.instagram.bl.PostFeedActivity"/>
+        <activity android:name="com.hs.instagram.bl.ProfileActivity"/>
+        <activity android:name="com.hs.instagram.bl.PermissionsActivity"/>
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
